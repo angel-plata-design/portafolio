@@ -74,18 +74,18 @@ h1{font-family:var(--D);font-size:clamp(2.8rem,5.2vw,4.8rem);font-weight:800;lin
 .cp:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,.08)}
 .cpb{font-size:.95rem;padding:.65rem 1.8rem}
 /* Brand logo cards */
-.clg{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1.1rem 1.5rem;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.6rem;transition:all .28s;cursor:default;min-width:138px;min-height:96px;position:relative;overflow:hidden}
+.clg{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1.1rem 1.5rem;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.6rem;transition:all .28s;cursor:default;min-width:120px;min-height:100px;position:relative;overflow:hidden}
 .clg::before{content:'';position:absolute;inset:0;background:var(--accent);opacity:0;transition:opacity .28s;z-index:0}
 .clg:hover{transform:translateY(-5px);box-shadow:0 12px 32px rgba(0,0,0,.1);border-color:var(--accent)}
 .clg:hover::before{opacity:.04}
-.clg-img{width:100px;height:40px;object-fit:contain;filter:grayscale(1) opacity(.55);transition:filter .35s;position:relative;z-index:1}
+.clg-img{width:44px;height:44px;object-fit:contain;filter:grayscale(1) opacity(.55);transition:filter .35s;position:relative;z-index:1;border-radius:8px}
 .clg:hover .clg-img{filter:grayscale(0) opacity(1)}
 .clg-name{font-size:.62rem;font-weight:600;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;transition:color .28s;position:relative;z-index:1}
 .clg:hover .clg-name{color:var(--ink)}
 .clg-fb{font-family:var(--D);font-weight:800;font-size:1.05rem;line-height:1.2;text-align:center;position:relative;z-index:1;transition:opacity .35s}
 
 /* SECTION */
-sec,.wsec{padding:5rem max(2rem,calc((100vw - 1200px) / 2))}
+sec,.wsec{display:block;padding:5rem max(2rem,calc((100vw - 1200px) / 2))}
 .sl2{font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:.55rem;display:flex;align-items:center;gap:.45rem}
 .sl2::before{content:'';width:16px;height:1px;background:var(--muted);display:inline-block}
 .st2{font-family:var(--D);font-size:clamp(1.8rem,3.2vw,2.8rem);font-weight:800;line-height:1.1;letter-spacing:-.03em;margin-bottom:.7rem}
@@ -298,28 +298,28 @@ footer{background:var(--paper);color:var(--muted);text-align:center;padding:1.2r
   <div class="clr">
     <!-- Bimbo -->
     <div class="clg">
-      <img class="clg-img" src="https://logo.clearbit.com/grupobimbo.com" alt="Bimbo"
+      <img class="clg-img" src="https://www.google.com/s2/favicons?domain=grupobimbo.com&sz=128" alt="Bimbo"
         onerror="this.style.display='none';document.getElementById('fb-bimbo').style.display='block'">
       <div id="fb-bimbo" class="clg-fb" style="display:none;color:#E2001A">Bimbo</div>
       <span class="clg-name">Bimbo</span>
     </div>
     <!-- Nestlé -->
     <div class="clg">
-      <img class="clg-img" src="https://logo.clearbit.com/nestle.com" alt="Nestlé"
+      <img class="clg-img" src="https://www.google.com/s2/favicons?domain=nestle.com&sz=128" alt="Nestlé"
         onerror="this.style.display='none';document.getElementById('fb-nestle').style.display='block'">
       <div id="fb-nestle" class="clg-fb" style="display:none;color:#009639">Nestlé</div>
       <span class="clg-name">Nestlé</span>
     </div>
     <!-- AstraZeneca -->
     <div class="clg">
-      <img class="clg-img" src="https://logo.clearbit.com/astrazeneca.com" alt="AstraZeneca"
+      <img class="clg-img" src="https://www.google.com/s2/favicons?domain=astrazeneca.com&sz=128" alt="AstraZeneca"
         onerror="this.style.display='none';document.getElementById('fb-az').style.display='block'">
       <div id="fb-az" class="clg-fb" style="display:none;color:#6B2D8B;font-size:.82rem">AstraZeneca</div>
       <span class="clg-name">AstraZeneca</span>
     </div>
     <!-- Farmacias Similares -->
     <div class="clg">
-      <img class="clg-img" src="https://logo.clearbit.com/farmaciassimilares.com.mx" alt="Farmacias Similares"
+      <img class="clg-img" src="https://www.google.com/s2/favicons?domain=farmaciassimilares.com.mx&sz=128" alt="Farmacias Similares"
         onerror="this.style.display='none';document.getElementById('fb-simi').style.display='block'">
       <div id="fb-simi" class="clg-fb" style="display:none;color:#E31E25;font-size:.75rem">Farmacias<br>Similares</div>
       <span class="clg-name">Farmacias Similares</span>
@@ -336,7 +336,7 @@ footer{background:var(--paper);color:var(--muted);text-align:center;padding:1.2r
     </div>
     <!-- Inmersys -->
     <div class="clg">
-      <img class="clg-img" src="https://logo.clearbit.com/inmersys.com" alt="Inmersys"
+      <img class="clg-img" src="https://www.google.com/s2/favicons?domain=inmersys.com&sz=128" alt="Inmersys"
         onerror="this.style.display='none';document.getElementById('fb-inmersys').style.display='block'">
       <div id="fb-inmersys" class="clg-fb" style="display:none;color:var(--ink)">Inmersys</div>
       <span class="clg-name">Inmersys</span>
@@ -356,7 +356,7 @@ footer{background:var(--paper);color:var(--muted);text-align:center;padding:1.2r
       <span class="pa">↗</span>
       <div class="pth" style="position:relative;background-image:url('https://images.unsplash.com/photo-1592478411213-6153e4ebc07d?auto=format&fit=crop&w=1200&h=400&q=75')">&nbsp;
         <div class="pbrand">
-          <img src="https://logo.clearbit.com/farmaciassimilares.com.mx" alt="" onerror="this.style.display='none'">
+          <img src="https://www.google.com/s2/favicons?domain=farmaciassimilares.com.mx&sz=128" alt="" onerror="this.style.display='none'">
           <span>Farmacias Similares</span>
         </div>
         <div class="tin">
@@ -386,7 +386,7 @@ footer{background:var(--paper);color:var(--muted);text-align:center;padding:1.2r
       <span class="pa">↗</span>
       <div class="pth" style="position:relative;background-image:url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=700&h=280&q=75')">
         <div class="pbrand">
-          <img src="https://logo.clearbit.com/grupobimbo.com" alt="" onerror="this.style.display='none'">
+          <img src="https://www.google.com/s2/favicons?domain=grupobimbo.com&sz=128" alt="" onerror="this.style.display='none'">
           <span>Bimbo</span>
         </div>
         <div class="tin">
@@ -412,7 +412,7 @@ footer{background:var(--paper);color:var(--muted);text-align:center;padding:1.2r
       <span class="pa">↗</span>
       <div class="pth" style="position:relative;background-image:url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=700&h=280&q=75')">
         <div class="pbrand">
-          <img src="https://logo.clearbit.com/nestle.com" alt="" onerror="this.style.display='none'">
+          <img src="https://www.google.com/s2/favicons?domain=nestle.com&sz=128" alt="" onerror="this.style.display='none'">
           <span>Nestlé</span>
         </div>
         <div class="tin">
@@ -465,7 +465,7 @@ footer{background:var(--paper);color:var(--muted);text-align:center;padding:1.2r
       <span class="pa">↗</span>
       <div class="pth" style="position:relative;background-image:url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=700&h=280&q=75')">
         <div class="pbrand">
-          <img src="https://logo.clearbit.com/astrazeneca.com" alt="" onerror="this.style.display='none'">
+          <img src="https://www.google.com/s2/favicons?domain=astrazeneca.com&sz=128" alt="" onerror="this.style.display='none'">
           <span>AstraZeneca</span>
         </div>
         <div class="tin">
@@ -493,7 +493,7 @@ footer{background:var(--paper);color:var(--muted);text-align:center;padding:1.2r
       <span class="pa">↗</span>
       <div class="pth" style="position:relative;background-image:url('https://images.unsplash.com/photo-1511512578047-ab3f78291b14?auto=format&fit=crop&w=700&h=280&q=75')">
         <div class="pbrand">
-          <img src="https://logo.clearbit.com/farmaciassimilares.com.mx" alt="" onerror="this.style.display='none'">
+          <img src="https://www.google.com/s2/favicons?domain=farmaciassimilares.com.mx&sz=128" alt="" onerror="this.style.display='none'">
           <span>Farmacias Similares</span>
         </div>
         <div class="tin">
